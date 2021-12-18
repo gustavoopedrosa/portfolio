@@ -9,30 +9,37 @@
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <aside class="aside">
             <figure class="profile card">
-                <img class="profile__image" src="assets/gustavo-pedrosa.jpg" alt="Foto de Luiz Gustavo Pedrosa">
+                <div class="profile__image__container">
+                    <img class="profile__image photo" src="assets/gustavo1.png" alt="Foto de Luiz Gustavo Pedrosa">
+                </div>
                 <figcaption class="profile__description">
                     <h2 class="subtitle">Luiz Gustavo Pedrosa de Melo</h2>
                     <p>Front-end Developer</p>
                 </figcaption>
             </figure>
-            <address class="address card">
-                <p class="address__items locale">Brasil</p>
-                <p class="address__items github"><a href="https://github.com/gustavoopedrosa"
-                        target="_blank">gustavoopedrosa</a></p>
-                <p class="address__items linkedin"><a href="https://www.linkedin.com/in/gustavo-pedrosa-/"
-                        target="_blank">gustavo-pedrosa-</a></p>
-                <p class="address__items twitter"><a href="https://twitter.com/lluizggustavo"
-                        target="_blank">lluizggustavo</a></p>
-                <p class="address__items email"><a href="mailto:luiz.gustavo.pedrosa@gmail.com"
-                        target="_blank">luiz.gustavo.pedrosa@gmail.com</a></p>
+            <address class="card">
+                <p class="font14"><img src="./assets/map-pin.svg" alt="Ícone de localização">Brasil</p>
+                <p class="font14"><img src="./assets/github.svg" alt="Ícone do Github"><a
+                        href="https://github.com/gustavoopedrosa" target="_blank">gustavoopedrosa</a></p>
+                <p class="font14"><img src="./assets/linkedin.svg" alt="Ícone do linkedin"><a
+                        href="https://www.linkedin.com/in/gustavo-pedrosa-/" target="_blank">gustavo-pedrosa-</a></p>
+                <p class="font14"><img src="./assets/twitter.svg" alt="Ícone do Twitter"><a
+                        href="https://twitter.com/lluizggustavo" target="_blank">lluizggustavo</a></p>
+                <p class="font14"><img src="./assets/mail.svg" alt="Ícone de email"><a
+                        href="mailto:luiz.gustavo.pedrosa@gmail.com" target="_blank">luiz.gustavo.pedrosa@gmail.com</a>
+                </p>
             </address>
-            <div class="techs card">
+            <div class="card">
                 <h2 class="subtitle">Tecnologias</h2>
                 <ul class="pills__container">
                     <li class="pills">HTML</li>
@@ -42,7 +49,7 @@
                     <li class="pills">Git</li>
                 </ul>
             </div>
-            <div class="experience card">
+            <div class="card">
                 <h2 class="subtitle">Experiência</h2>
                 <ul class="list__contatiner">
                     <li class="list__items">
@@ -52,7 +59,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="education card">
+            <div class="card">
                 <h2 class="subtitle">Educação</h2>
                 <ul class="list__contatiner">
                     <li class="list__items">
@@ -73,53 +80,83 @@
             <section class="projects">
                 <div class="projects__header card">
                     <h2 class="subtitle">My projects</h2>
-                    <a href="#">Veja todos</a>
+                    <a class="projects__header__link" href="#">Veja todos</a>
                 </div>
                 <div class="projects__articles__container">
                     <article class="projects__articles card">
-                        <h3 class="article__title">my-onix</h3>
+                        <div class="article__title">
+                            <img src="./assets/folder.svg" alt="Ícone de uma pasta">
+                            <h3>my-onix</h3>
+                        </div>
                         <p class="projects__article__description"> Consulte os códigos de erro que aparecem no painel do
                             veículo Onix.</p>
-                        <span class="star">100</span>
-                        <span class="branch">100</span>
-                        <span class="language">JavaScript</span>
+                        <div class="about">
+                            <div class="classification">
+                                <div class="classification__div">
+                                    <img src="./assets/star.svg" alt="Ícone de estrela">
+                                    <span>100</span>
+                                </div>
+                                <div class="classification__div">
+                                    <img src="./assets/git-branch.svg" alt="Ícone de uma branch">
+                                    <span>100</span>
+                                </div>
+                            </div>
+                            <div class="language">
+                                <img src="./assets/Ellipse 2.png" alt="Ícone de estrela">
+                                <span class="slipse">JavaScript</span>
+                            </div>
+                        </div>
                     </article>
                     <article class="projects__articles card">
-                        <h3 class="projects__article__title">my-onix</h3>
+                        <div class="article__title">
+                            <img src="./assets/folder.svg" alt="Ícone de uma pasta">
+                            <h3>my-onix</h3>
+                        </div>
                         <p class="projects__article__description"> Consulte os códigos de erro que aparecem no painel do
                             veículo Onix.</p>
-                        <span class="star">100</span>
-                        <span class="branch">100</span>
-                        <span class="language">JavaScript</span>
+                        <div class="about">
+                            <div class="classification">
+                                <div class="classification__div">
+                                    <img src="./assets/star.svg" alt="Ícone de estrela">
+                                    <span>100</span>
+                                </div>
+                                <div class="classification__div">
+                                    <img src="./assets/git-branch.svg" alt="Ícone de uma branch">
+                                    <span>100</span>
+                                </div>
+                            </div>
+                            <div class="language">
+                                <img src="./assets/Ellipse 2.png" alt="Ícone de estrela">
+                                <span class="slipse">JavaScript</span>
+                            </div>
+                        </div>
                     </article>
                 </div>
             </section>
             <section class="posts">
-                <div class="posts__header card">
+                <div class="card">
                     <h2 class="subtitle">Recent Posts</h2>
                 </div>
-                <div class="posts__content card">
-                    <article class="posts__article">
+                    <article class="posts__article card">
                         <div class="posts__image">
-                            <img src="assets/gustavo-pedrosa.jpg" alt="Foto de Luiz Gustavo Pedrosa">
+                            <img class="photo" src="assets/gustavo1.png" alt="Foto de Luiz Gustavo Pedrosa">
                         </div>
-                        <div>
-                            <h3 class="article__title">How to initiate in a Front-end career</h3>
-                            <span>2 anos atrás</span>
-                            <p>How to initiate in a Front-end career</p>
-                            <ul>
+                        <div class="posts__content">
+                            <h3 class="posts__title">How to initiate in a Front-end career</h3>
+                            <p class="posts__date">2 anos atrás</p>
+                            <p class="posts__description">How to initiate in a Front-end career</p>
+                            <ul class="posts__list">
                                 <li>#Career</li>
                                 <li>#Junior</li>
-                                <li>Front-end</li>
+                                <li>#Front-end</li>
                             </ul>
                         </div>
                     </article>
-                </div>
             </section>
         </main>
     </div>
-    <footer>
-        <p class="footer">Desenvolvido por Gustavo Pedrosa.</p>
+    <footer class="footer">
+        <p>Desenvolvido por <strong></strong>Gustavo Pedrosa</strong></p>
     </footer>
 
 </body>

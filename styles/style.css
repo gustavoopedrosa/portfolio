@@ -10,6 +10,8 @@ body {
     max-width: 1440px;
     background-color: var(--body-bg-color);
     color: var(--text-color);
+    margin: 0 auto;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .container {
@@ -32,37 +34,212 @@ body {
     flex-direction: column;
 }
 
+.card {
+    background-color: var(--bg-cards);
+    border-radius: 2rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    padding: 1.5rem;
+    margin: 1rem;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin: 1rem;
+}
+
 .profile {
     text-align: center;
 }
 
 .profile__image {
-    border: 1px solid green;
+    border: 2px solid #00FF00;
+    margin-top: 3rem;
 }
 
-img {
-    height: 12.8rem;
-    border-radius: 9rem;
+.profile__description p {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+}
+
+.photo {
+    border-radius: 50%;
     object-fit: cover;
-    
+    width: 125px;
 }
 
-.card {
-    background-color: var(--bg-cards);
-    border-radius: 1rem;
-    box-shadow: 2px 2px 2px black;
-    padding: 1.5rem;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.font14 {
+    font-size: 1.4rem;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.font14 img {
+    margin: 0 2.5rem;
+
+}
+
+.pills__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.pills {
+    background-color: var(--bg-techs);
+    width: 7.6rem;
+    border-radius: 2rem;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem 1rem;
+    padding: 1rem;
+}
+
+.list__items {
+    list-style-position: outside;
+    list-style-type: disc;
+    margin-left: 3rem;
+}
+
+.list__title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 2.5rem 0 0.3rem 0;
+}
+
+.list__description {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.projects__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projects__header__link {
+    font-size: 1.6rem;
+    margin: auto 1rem;
+}
+
+.projects__articles__container {
+    display: grid;
+    grid-template-areas: "a a";
+    grid-template-columns: 1fr 1fr;    
+}
+
+.projects__articles {
+    padding: 2.5rem;
+}
+
+.article__title {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.article__title img {
+    margin-right: 1.5rem;
+}
+
+
+.projects__article__description {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.classification {
+    display: flex;
+}
+
+.classification__div {
+    display: flex;
+    font-size: 1.3rem;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.classification__div span {
+    line-height: 0;
+    margin-left: .5rem;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.language span {
+    line-height: 0;
+    margin-left: .5rem;
+}
+
+.posts__article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.posts__image {
     margin: 2rem;
 }
 
-.subtitle {
-    font-weight: bold;
-    font-size: 2rem;
-    margin: 1rem 0;
+.posts__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.posts__date {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+}
+
+.posts__description {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.posts__list {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem;
+    justify-content: left;
+}
+
+.posts__list li {
+    margin-right: 2rem;
 }
 
 .footer {
     text-align: center;
-    margin-top: 1rem;
+    margin: 2rem;
+    font-size: 1.4rem;
 }
 
+.footer strong {
+    font-weight: bold;
+}
