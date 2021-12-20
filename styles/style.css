@@ -8,9 +8,10 @@
 
 body {
     max-width: 1440px;
+    width: 100%;
     background-color: var(--body-bg-color);
     color: var(--text-color);
-    margin: 0 auto;
+    margin: 1rem auto;
     font-family: 'Merriweather Sans', sans-serif;
 }
 
@@ -66,6 +67,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     width: 125px;
+    margin-bottom: 1rem;
 }
 
 a {
@@ -86,13 +88,14 @@ a:hover {
 
 .font14 img {
     margin: 0 2.5rem;
-
 }
 
 .pills__container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: flex-start;
+
 }
 
 .pills {
@@ -235,11 +238,80 @@ a:hover {
 }
 
 .footer {
+    width: 100%;
     text-align: center;
-    margin: 2rem;
+    margin: 2rem auto;
     font-size: 1.4rem;
 }
 
 .footer strong {
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .projects__articles__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .responsive__tablet {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .techs__subtitle {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .profile__description p {
+        margin-top: 2rem;
+    }
+
+    .font14 {
+        overflow: hidden;
+    }
+
+    .font14 img {
+        margin: 0 2rem 0 0;
+    }
+
+    .projects__articles__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .posts__article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .posts__list {
+        padding-bottom: 1rem;
+    }
+
+    .responsive__tablet {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .techs__subtitle {
+        text-align: left;
+    }
 }
